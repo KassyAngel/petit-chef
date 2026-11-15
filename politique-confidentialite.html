@@ -259,6 +259,8 @@
             <li>Les recettes personnelles que vous créez ou importez (titre, ingrédients, étapes, photos, notes), y compris celles dictées à la voix</li>
             <li>Vos menus de la semaine sauvegardés</li>
             <li>Votre statut de première visite (pour l'affichage de l'introduction)</li>
+            <li>Votre magasin préféré, l'adresse du drive E.Leclerc que vous avez éventuellement enregistrée, et les prix que vous saisissez à côté des articles de votre liste de courses (le total du panier est calculé sur l'appareil)</li>
+            <li>Les réglages de votre rappel hebdomadaire (activé ou non, jour et heure)</li>
         </ul>
         <div class="info-box">
             <p><strong>🍃 Note importante :</strong> Ces données restent sur votre appareil. Si vous désinstallez l'application ou supprimez ses données, ces informations seront définitivement perdues (sauf si vous les avez exportées vous-même, par exemple en PDF).</p>
@@ -272,6 +274,8 @@
 
         <h3>4.4 Publicité (utilisateurs non-Premium)</h3>
         <p>Les utilisateurs de la version gratuite voient des publicités fournies par <strong>Google AdMob</strong>. AdMob peut collecter un identifiant publicitaire (GAID) et des données d'usage à des fins de diffusion et de mesure des annonces, conformément à la politique de confidentialité de Google. L'abonnement Premium retire toutes les publicités.</p>
+
+        <p>Dans l'Espace économique européen, au Royaume-Uni et en Suisse, un formulaire de consentement fourni par Google (Google User Messaging Platform) s'affiche au premier lancement pour recueillir votre choix. Vous pouvez le modifier à tout moment dans les Réglages, via « Préférences de publicité ».</p>
 
         <h3>4.5 Données collectées pour l'abonnement Premium</h3>
         <p>Si vous souscrivez à l'abonnement Premium :</p>
@@ -289,8 +293,20 @@
         <ul>
             <li>Type d'appareil et version du système d'exploitation (via Capacitor/Android)</li>
             <li>Identifiants techniques anonymes nécessaires au fonctionnement de RevenueCat et d'AdMob</li>
+
+            <h3>4.7 Liens vers des sites externes</h3>
+            <p>Petit Chef contient des boutons qui ouvrent des sites tiers : le site officiel de votre enseigne (catalogue, offres de la semaine, drive, recherche d'un article), une recherche Google lorsqu'une recette n'est pas dans l'application, et Google Maps pour trouver le magasin le plus proche. Ces pages s'ouvrent dans le navigateur intégré de l'application ou dans une application externe. Elles sont alors régies par les politiques de confidentialité et de cookies de ces sites. Les termes de recherche (nom d'un article, d'une recette) figurent dans l'adresse ouverte et sont donc visibles par le site concerné.</p>
+            <p>Pour « Magasin le plus proche », c'est Google Maps qui demande l'accès à votre position, et non Petit Chef : l'application n'accède pas à votre localisation.</p>
+            <p>Si vous collez l'adresse de votre drive E.Leclerc depuis le presse-papiers, l'application lit son contenu uniquement au moment où vous touchez le bouton prévu. Seule l'adresse d'un drive E.Leclerc est conservée, sur votre appareil.</p>
+
+            <h3>4.8 Notifications de rappel</h3>
+            <p>Si vous activez le rappel hebdomadaire du menu, l'application programme une notification locale sur votre appareil. Elle ne passe par aucun serveur. Android vous demande votre autorisation avant la première notification. Vous pouvez la retirer à tout moment dans les réglages d'Android ou désactiver le rappel dans les Réglages de l'application.</p>
+
+            <h3>4.9 Appareil photo et photos</h3>
+            <p>Pour ajouter une photo à une recette de votre carnet, l'application peut demander l'accès à l'appareil photo ou à vos photos. Les images choisies sont copiées dans le stockage de l'application, sur votre appareil, et ne sont pas envoyées à nos serveurs.</p>
         </ul>
     </div>
+    
 
     <!-- Finalités -->
     <div class="section">
@@ -318,7 +334,7 @@
     <div class="section">
         <h2><span class="num">6</span>Base juridique du traitement</h2>
         <ul>
-            <li><strong>Consentement :</strong> pour l'utilisation de l'application, l'accès au micro (dictée) et l'affichage de publicités personnalisées</li>
+            <li><strong>Consentement :</strong> pour l'accès au micro (dictée), à l'appareil photo, aux notifications, et pour l'affichage de publicités personnalisées</li>
             <li><strong>Exécution du contrat :</strong> pour la gestion de votre abonnement Premium</li>
             <li><strong>Intérêt légitime :</strong> pour l'amélioration de l'application et la prévention de la fraude</li>
             <li><strong>Obligations légales :</strong> pour le respect de la législation en vigueur</li>
@@ -382,6 +398,9 @@
             <li><strong>Google AdMob SDK :</strong> affichage des publicités (version gratuite)</li>
             <li><strong>Reconnaissance vocale native (Capacitor) :</strong> dictée pour la création de recettes</li>
             <li><strong>Capacitor :</strong> accès natif Android pour les fonctionnalités mobiles</li>
+            <li><strong>Notifications locales (Capacitor) :</strong> rappel hebdomadaire du menu, programmé sur l'appareil</li>
+            <li><strong>Navigateur intégré (Capacitor) :</strong> ouverture des sites des enseignes, de Google et de Google Maps</li>
+            <li><strong>Google User Messaging Platform :</strong> recueil du consentement publicitaire (Europe)</li>
         </ul>
     </div>
 
@@ -430,7 +449,7 @@
         <p>Nous nous réservons le droit de modifier la présente politique pour nous conformer à l'évolution de la législation ou refléter des changements dans nos pratiques.</p>
         <div class="info-box">
             <p>En cas de modification substantielle, vous serez informé via une notification dans l'application.</p>
-            <p>Date de dernière modification : <strong>septembre 2026</strong></p>
+            <p>Date de dernière modification : <strong>novembre 2026</strong></p>
         </div>
     </div>
 
@@ -445,7 +464,7 @@
 
     <footer>
         <p class="footer-logo">🍳 Petit Chef</p>
-        <p>Politique de confidentialité — Kc Dev — Septembre 2026</p>
+        <p>Politique de confidentialité — Kc Dev — Novembre 2026</p>
         <p>Conforme au RGPD (Règlement UE 2016/679)</p>
     </footer>
 </div>
